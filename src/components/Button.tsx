@@ -1,22 +1,9 @@
-/* type ButtonProps = {
-  text?: string; //O "?" torna a propriedade opcional
-} */
+import {ButtonHTMLAttributes} from 'react' //Importa todos os atributos que um botão pode receber
 
-import { useState } from "react";
-
-export function Button (/* props: ButtonProps */) {
- //let counter = 0;
- const [counter, setCounter] = useState(0);//Criando estado
-
-
- function increment(){
-   setCounter(counter + 1);
- }
- 
- 
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
+  
+export function Button (props: ButtonProps) { 
   return(
-    <button onClick={increment}>{/* {props.text || "Default"} */}
-      {counter}
-    </button>
+    <button className="button" {...props} />
   )
 }
