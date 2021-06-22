@@ -54,6 +54,12 @@
     > img{
       align-self: center;
     }
+
+    h2{
+      font-size: 24px;
+      margin: 64px 0 24px ;
+      font-family: 'Poppins', sans-serif;
+    }
     
     form{
       input{
@@ -61,6 +67,9 @@
         border-radius: 8px;
         background: #fff;
         border: 1px solid #a8a8b3;
+        
+        padding: 0 16px;
+
       }
 
       button{
@@ -69,6 +78,16 @@
 
       button, input{
         width: 100%;
+      }
+    }
+
+    p{
+      font-size: 14px;
+      color: #737380;
+      margin-top: 16px;
+
+      a{
+        color: #e559f9;
       }
     }
 
