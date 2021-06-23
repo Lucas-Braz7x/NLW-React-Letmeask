@@ -1,14 +1,21 @@
-import illustrationImg from '../assets/images/illustration.svg'
-import logoImg from '../assets/images/logo.svg'
-import googleIconImg from '../assets/images/google-icon.svg'
+import { useContext } from 'react';
 
-import '../styles/global.scss'
-import '../styles/auth.scss'
+import {Link} from 'react-router-dom';//Mudar de endereço atraves de um link
 
-import { Button } from '../components/Button'
+import illustrationImg from '../assets/images/illustration.svg';
+import logoImg from '../assets/images/logo.svg';
+
+import '../styles/global.scss';
+import '../styles/auth.scss';
+
+import { Button } from '../components/Button';
+
+import {AuthContext} from '../contexts/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 
 
 export function NewRoom(){
+  const {user, signInWithGoogle} = useAuth();//Recuperando o valor do contexto
   return(
     <div id="page-auth">
       <aside>
@@ -31,7 +38,7 @@ export function NewRoom(){
             </Button>
           </form>
           <p>
-            Quer entrar em uma sala existente? <a href="">clique aqui</a>
+            Quer entrar em uma sala existente? <Link to="/">clique aqui</Link>
           </p>
         </div>
       </main>
