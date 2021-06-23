@@ -14,7 +14,7 @@ import { useAuth } from '../hooks/useAuth';
 import {AuthContext} from '../contexts/AuthContext';
 
 //Importando "css" 
-import '../styles/global.scss';
+
 import '../styles/auth.scss';
 
  //Importando componente Button
