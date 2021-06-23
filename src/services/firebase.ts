@@ -15,16 +15,6 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APP_ID,
 };
 
-/* const firebaseConfig = {
-  apiKey: "AIzaSyCI9Yki_hrNFdq9_lP2wvcz_99D06x2NxU",
-  authDomain: "letmeask-e9763.firebaseapp.com",
-  databaseURL: "https://letmeask-e9763-default-rtdb.firebaseio.com",
-  projectId: "letmeask-e9763",
-  storageBucket: "letmeask-e9763.appspot.com",
-  messagingSenderId: "730941750023",
-  appId: "1:730941750023:web:5ce930342995a43e8a63a2"
-}; */
-
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
