@@ -10,10 +10,10 @@ import '../styles/auth.scss';
 
 import { Button } from '../components/Button';
 
-import {AuthContext} from '../contexts/AuthContext';
+//import {AuthContext} from '../contexts/AuthContext';
 import { useAuth } from '../hooks/useAuth';
 import { database } from '../services/firebase';
-import userEvent from '@testing-library/user-event';
+//import userEvent from '@testing-library/user-event';
 
 
 export function NewRoom(){

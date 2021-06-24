@@ -11,7 +11,7 @@ import googleIconImg from '../assets/images/google-icon.svg';
 
 //Importando contexto
 import { useAuth } from '../hooks/useAuth';
-import {AuthContext} from '../contexts/AuthContext';
+//import {AuthContext} from '../contexts/AuthContext';
 
 //Importando "css" 
 
@@ -52,7 +52,10 @@ export function Home(){
       alert('Room is not exists');
       return;
     }
-
+    if(roomRef.val().endedAt){
+      alert('Room already closed.')
+      return;
+    }
     history.push(`/rooms/${roomCode}`);
 
   }
